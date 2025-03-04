@@ -1,0 +1,83 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"); */
+
+@import "tailwindcss";
+@tailwind utilities;
+
+@font-face {
+  font-family: "squarepeg";
+  src: url("/fonts/squarePeg/SquarePeg-Regular.woff2") format("woff2");
+  font-weight: 400; /* Light */
+  font-style: normal;
+}
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/fonts/helveticaNeue/HelveticaNeueLight.woff") format("woff");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/fonts/helveticaNeue/HelveticaNeueLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/fonts/helveticaNeue/HelveticaNeueRoman.woff") format("woff");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/fonts/helveticaNeue/HelveticaNeueMedium.woff") format("woff");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/fonts/helveticaNeue/HelveticaNeueMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/fonts/helveticaNeue/HelveticaNeueBold.woff") format("woff");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/fonts/helveticaNeue/HelveticaNeueBoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/fonts/helveticaNeue/HelveticaNeueBlack.woff") format("woff");
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/fonts/helveticaNeue/HelveticaNeueBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  /* font-family: "helveticaneue", Arial, sans-serif; */
+  font-weight: 400;
+}
