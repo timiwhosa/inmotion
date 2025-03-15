@@ -2,9 +2,9 @@ import React from "react";
 
 const ContactButton = () => {
   return (
-    <div className="inline-flex items-center border rounded-full w-max pl-5">
-      <span className="mr-2 text-black">Need Software Solutions?</span>
-      <div className="bg-primary rounded-full w-10 h-10 flex items-center justify-center">
+    <div className="inline-flex items-center border rounded-full w-max pl-5 gap-5">
+      <span className="text-black text-base font-family-helvetica-neue">Need Software Solutions?</span>
+      <div className="bg-primary rounded-full p-5 flex items-center justify-center">
         <svg
           width="18"
           height="18"
