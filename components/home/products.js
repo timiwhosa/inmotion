@@ -5,7 +5,7 @@ export default function Products() {
   return (
     <div className="py-[20vh]">
       <h1 className="font-bold text-5xl flex items-center pb-18 w-full justify-center">
-        <span className="max-w-[424px] ">Ongoing Solutions for Tomorrow</span>
+        <span className="max-w-[424px] pl-5 md:p-0">Ongoing Solutions for Tomorrow</span>
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-3 font-['helveticaNeue'] ">
         <div className="relative w-full  bg-[#7A00D6] text-white p-10 min-w-[300px] rounded-3xl overflow-hidden">
@@ -65,7 +65,7 @@ export default function Products() {
               passengers
             </p>
             <div className="w-full flex justify-end text-white">
-              <a href="https://nibi.ng" className="flex items-center gap-3">
+              <a href="https://nibi.ng" target="_blank" className="flex items-center gap-3">
                 Visit Nibi <ArrowRight size={20} />
               </a>
             </div>

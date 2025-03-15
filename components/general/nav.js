@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Nav = () => {
   return (
-    <nav className="flex justify-between items-center w-full z-10 py-5 md:py-10 md:px-20">
+    <nav className="flex p-5 justify-between items-center w-full z-10 md:py-10 md:px-20">
       <div className="flex flex-row gap-2 items-center">
         <Image
           alt="inmotion logo mark"
@@ -72,16 +72,16 @@ const Nav = () => {
           ></path>
         </svg> */}
       </div>
-      <div className="flex items-center rounded-[20px] border-black border w-max h-max py-2 px-2 md:py-5 md:px-5 gap-10 text-base font-normal underline">
-        <span className="t-underline">
+      <div className=" flex-col hidden sm:flex md:flex-row items-center rounded-[20px] border-black border w-max h-max py-2 px-2 md:py-5 md:px-5 gap-2 md:gap-10 text-base font-normal underline ">
+        <span className="">
           <a href="#locations">Locations</a>
         </span>
-        <span className="relative block w-0.5 h-6 bg-black"></span>
-        <span className="t-underline">
+        <span className="relative hidden md:block w-0.5 h-6 bg-black"></span>
+        <span className="">
           <a href="#about">About Us</a>
         </span>
-        <span className="relative block w-0.5 h-6 bg-black"></span>
-        <span className="t-underline">
+        <span className="relative hidden md:block w-0.5 h-6 bg-black"></span>
+        <span className="">
           <a href="https://wa.me/2347078065016"> Contact Us</a>
         </span>
       </div>
