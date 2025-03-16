@@ -4,7 +4,7 @@ import ContactButton from "../general/callUsbtn";
 const HomeHero = () => {
   return (
     <header className="px-5 gap-10  h-auto w-full flex flex-col-reverse sm:flex-row items-end  justify-center">
-      <div className="left w-full  flex md:w-max md:max-w-[440px] flex-col gap-3 md:mt-[14vh] md:items-end md:justify-end">
+      <div className="left w-full  flex md:w-max md:max-w-[440px] flex-col gap-3 mt-[14vh] md:items-end md:justify-end">
         <h1 className=" font-['helveticaNeue'] text-[40px] md:text-[48px] lg:text-[58px] font-black  leading-[1.2] -tracking-[2px]">
           SOLUTIONS <span className="font-['squarepeg'] font-normal">fOR</span>{" "}
           <br />
