@@ -19,7 +19,7 @@ export default function Home() {
           alt="inmotion tools"
           width={2224}
           height={2224}
-          className="w-full h-auto p-5 py-20 md:p-[10vh]"
+          className="w-full h-auto py-20 md:px-[10vh]"
         />
       </div>
       <div className="flex justify-center">
@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <footer className="grid gap-20">
         <div>
-          <div className="w-full flex flex-col justify-center items-center px-10 md:px-auto">
+          <div className="w-full flex flex-col justify-center items-center px-5 md:px-auto">
             <Image
               alt="inmotion logo mark"
               src="/img/icon.svg"

@@ -25,7 +25,7 @@ const HomeHero = () => {
           <ContactButton />
         </div>
       </div>
-      <div className="flex self-start">
+      <div className="hidden sm:flex self-start">
         <Image
           src="/img/home/heroimg.svg"
           className="w-auto h-full"
