@@ -23,9 +23,9 @@ const Services = () => {
               <span className="text-xl block font-thin">Custom</span>
               Software Development
             </div>
-            <div className="w-max rounded-full p-5 bg-white font-bold">
+            {/* <div className="w-max rounded-full p-5 bg-white font-bold">
               <ArrowRight size={26} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -40,8 +40,8 @@ const Services = () => {
             <span className="block w-[40px] h-[40px] rounded-full bg-[#ffb400] z-10 relative -left-8"></span>
           </div>
           <div className="flex items-center gap-3 text-xl">
-            <Link href="#">Check it out</Link>
-            <ArrowRight size={26} />
+            {/* <Link href="#">Check it out</Link> */}
+            {/* <ArrowRight size={26} /> */}
           </div>
         </div>
       </div>
@@ -56,8 +56,10 @@ const Services = () => {
               className="rounded-3xl"
             />
             <div className="flex items-center gap-3 text-xl">
-              <Link href="#">RTC & Mapping Tech</Link>
-              <ArrowRight size={26} />
+              {/* <Link href="#"> */}
+              RTC & Mapping Tech
+              {/* </Link> */}
+              {/* <ArrowRight size={26} /> */}
             </div>
           </div>
           <div className="flex justify-end flex-wrap md:flex-nowrap items-center border-2 rounded-2xl py-3 px-5 w-max h-max gap-5 text-xl">
@@ -80,7 +82,7 @@ const Services = () => {
         <div className="w-full border-2 rounded-3xl p-5 md:max-w-[80%] flex flex-col gap-10 shadow-[12px_12px_0px_-5px_rgba(0,0,0,1)]">
           <p className="font-bold text-base md:text-xl flex items-center gap-3">
             AI & Machine Learning
-            <ArrowRight size={26} />
+            {/* <ArrowRight size={26} /> */}
           </p>
           <div className="w-full flex flex-col gap-5">
             <p className="opacity-60 text-base ">

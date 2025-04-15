@@ -39,31 +39,34 @@ export default function Home() {
             <Image
               alt="inmotion logo mark"
               src="/img/icon.svg"
-              width={50}
-              height={50}
+              width={5000}
+              height={5000}
               className="object-contain w-auto h-auto md:h-[140px]"
             />
 
             <Image
               alt="inmotion word mark"
               src="/img/inmotion.svg"
-              width={50}
-              height={50}
+              width={5000}
+              height={5000}
               className="object-contain w-auto h-auto md:h-[120px]"
             />
             <p className="w-max text-3xl md:text-6xl">Technologies</p>
-            <button className="bg-primary rounded-full px-10 py-5 flex items-center gap-4 w-max mt-5">
+            <a
+              href="https://wa.me/2347078065016"
+              className="bg-primary rounded-full px-10 py-5 flex items-center gap-4 w-max mt-5 "
+            >
               Lets get Talking Solutions <Phone size={20} />
-            </button>
+            </a>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-20 mt-20 font-thin">
             <Link
-              href="#"
+              href="https://wa.me/2347078065016"
               className="flex underline text-xl items-center gap-2 hover:text-primary"
             >
               <Phone size={20} /> Contact
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="flex underline text-xl items-center gap-2"
             >
@@ -80,11 +83,11 @@ export default function Home() {
               className="flex underline text-xl items-center gap-2 hover:text-[#28B446]"
             >
               <MapPin size={20} /> Our Locations
-            </Link>
+            </Link> */}
           </div>
         </div>
         <Image
-          alt="inmotion word mark"
+          alt="inmotion stripes"
           src="/img/inmotionstripes.svg"
           width={50}
           height={50}
