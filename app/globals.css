@@ -88,10 +88,13 @@
   * {
     -webkit-tap-highlight-color: rgba(255, 213, 0, 0.546);
   }
-
+html{
+  scroll-behavior: smooth;
+}
   body {
     font-family: var(--font-family-helvetica-neue);
     font-weight: 400;
+    scroll-behavior: smooth;
   }
 }
 

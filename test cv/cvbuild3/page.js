@@ -27,8 +27,7 @@ export default function CVBuildingService() {
         "DOC & PDF formats",
       ],
       icon: <FileText className="w-10 h-10 text-blue-500 mb-4" />,
-      paymentLink: "test",
-      // image: "/img/home/software dev.jpg", // Replace with "professional-cv-template.jpg" - Image of a clean, professional CV template
+      image: "/img/home/software dev.jpg", // Replace with "professional-cv-template.jpg" - Image of a clean, professional CV template
     },
     {
       id: "career",
@@ -43,9 +42,7 @@ export default function CVBuildingService() {
         "DOC & PDF formats",
       ],
       icon: <Users className="w-10 h-10 text-blue-600 mb-4" />,
-      paymentLink: "test",
-
-      // image: "/img/home/software dev.jpg", // Replace with "career-pack-multiple-cvs.jpg" - Image showing multiple CV designs side by side
+      image: "/img/home/software dev.jpg", // Replace with "career-pack-multiple-cvs.jpg" - Image showing multiple CV designs side by side
     },
     {
       id: "build",
@@ -59,9 +56,7 @@ export default function CVBuildingService() {
         "DOC & PDF formats",
       ],
       icon: <Star className="w-10 h-10 text-purple-500 mb-4" />,
-      paymentLink: "test",
-
-      // image: "/img/home/software dev.jpg", // Replace with "collaborative-session.jpg" - Image of two people working together on laptop
+      image: "/img/home/software dev.jpg", // Replace with "collaborative-session.jpg" - Image of two people working together on laptop
     },
     {
       id: "linkedin",
@@ -75,18 +70,15 @@ export default function CVBuildingService() {
         "Network building roadmap",
       ],
       icon: <Linkedin className="w-10 h-10 text-blue-700 mb-4" />,
-      paymentLink: "test",
-
-      // image: "/img/home/software dev.jpg", // Replace with "linkedin-profile-optimization.jpg" - Image of optimized LinkedIn profile
+      image: "/img/home/software dev.jpg", // Replace with "linkedin-profile-optimization.jpg" - Image of optimized LinkedIn profile
     },
   ];
 
-  // const handleSelectPackage = (id) => {
-  //   setSelectedPackage(id);
-  //   // Instead of proceeding to payment, show consultation modal
-  //   // setShowConsultModal(true);
-  //   initiatePayment();
-  // };
+  const handleSelectPackage = (id) => {
+    setSelectedPackage(id);
+    // Instead of proceeding to payment, show consultation modal
+    setShowConsultModal(true);
+  };
 
   const initiateWhatsAppConsultation = () => {
     const selectedPkg = packages.find((pkg) => pkg.id === selectedPackage);
@@ -95,7 +87,7 @@ export default function CVBuildingService() {
       : "Hi, I'm interested in your CV writing services. I'd like to schedule a consultation.";
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/2347078065016?text=${encodedMessage}`, "_blank");
+    window.open(`https://wa.me/234XXXXXXXXXX?text=${encodedMessage}`, "_blank");
   };
 
   const initiatePayment = () => {
@@ -114,12 +106,12 @@ export default function CVBuildingService() {
       {/* Hero Section */}
       <div className="relative mb-20">
         <div className="absolute inset-0 z-0 opacity-10">
-          {/* <img
+          <img
             src="/img/home/software dev.jpg"
             alt="CV background"
             className="w-full h-full object-cover rounded-3xl"
             // Replace with "cv-hero-background.jpg" - Professional image showing success/career growth
-          /> */}
+          />
         </div>
         <div className="relative z-10 text-center py-16 px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -131,7 +123,7 @@ export default function CVBuildingService() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="https://wa.me/2347078065016?text=Hi,%20I%20need%20help%20with%20a%20professional%20CV.%20Can%20we%20talk?"
+              href="https://wa.me/234XXXXXXXXXX?text=Hi,%20I%20need%20help%20with%20a%20professional%20CV.%20Can%20we%20talk?"
               className="bg-green-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-green-700 transition shadow-lg flex items-center justify-center"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
@@ -207,7 +199,7 @@ export default function CVBuildingService() {
             </div>
 
             <a
-              href="https://wa.me/2347078065016?text=Hi,%20I%20need%20help%20with%20a%20professional%20CV.%20Can%20we%20talk?"
+              href="https://wa.me/234XXXXXXXXXX?text=Hi,%20I%20need%20help%20with%20a%20professional%20CV.%20Can%20we%20talk?"
               className="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition mt-4"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
@@ -218,7 +210,7 @@ export default function CVBuildingService() {
       </div>
 
       {/* Value Proposition */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-40">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
         <div className="bg-gray-50 p-6 rounded-xl text-center">
           <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <FileText className="w-8 h-8 text-blue-600" />
@@ -253,7 +245,7 @@ export default function CVBuildingService() {
       </div>
 
       {/* Pricing Section */}
-      <div id="pricing" className="mb-40">
+      <div id="pricing" className="mb-20">
         <h2 className="text-3xl font-bold text-center mb-4">Our Packages</h2>
         <p className="text-center text-gray-600 mb-6 max-w-2xl mx-auto">
           Browse our services below, but remember - we recommend talking to us
@@ -261,7 +253,7 @@ export default function CVBuildingService() {
         </p>
         <p className="text-center mb-12">
           <a
-            href="https://wa.me/2347078065016?text=Hi,%20I%20need%20help%20choosing%20the%20right%20CV%20package."
+            href="https://wa.me/234XXXXXXXXXX?text=Hi,%20I%20need%20help%20choosing%20the%20right%20CV%20package."
             className="text-blue-600 font-medium hover:underline flex items-center justify-center"
           >
             <MessageCircle className="w-4 h-4 mr-1" />
@@ -273,27 +265,33 @@ export default function CVBuildingService() {
           {packages.map((pkg) => (
             <div
               key={pkg.id}
-              className={`border rounded-xl  flex flex-col relative ${
+              className={`border rounded-xl overflow-hidden flex flex-col relative ${
                 selectedPackage === pkg.id
                   ? "border-blue-500 shadow-lg"
                   : "border-gray-200 hover:border-blue-300 hover:shadow-md"
               } ${pkg.popular ? "ring-2 ring-blue-500" : ""} transition-all`}
             >
               {pkg.popular && (
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium z-10">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium z-10">
                   MOST POPULAR
                 </div>
               )}
-              <div className="flex flex-col items-center mb-6 mt-4">
-                {pkg.icon}
-                <h3 className="text-xl font-bold mb-2">{pkg.title}</h3>
-                <p className="text-3xl font-bold text-blue-600">{pkg.price}</p>
+
+              <div className="h-40 w-full relative overflow-hidden">
+                <img
+                  src={pkg.image}
+                  alt={pkg.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                  <h3 className="text-xl font-bold text-white">{pkg.title}</h3>
+                </div>
               </div>
 
               <div className="p-6 flex flex-col flex-grow">
-                {/* <p className="text-3xl font-bold text-blue-600 mb-4">
+                <p className="text-3xl font-bold text-blue-600 mb-4">
                   {pkg.price}
-                </p> */}
+                </p>
 
                 <ul className="space-y-3 mb-8 flex-grow">
                   {pkg.features.map((feature, idx) => (
@@ -305,18 +303,18 @@ export default function CVBuildingService() {
                 </ul>
 
                 <div className="flex space-x-2">
-                  <a href={pkg.paymentLink}
+                  <button
                     onClick={() => handleSelectPackage(pkg.id)}
-                    className="flex-1 py-2 text-center rounded-lg font-medium bg-blue-600 text-white hover:bg-blue-700"
+                    className="flex-1 py-2 rounded-lg font-medium bg-blue-600 text-white hover:bg-blue-700"
                   >
-                    Get this Package
-                  </a>
-                  {/* <a
-                    href="https://wa.me/2347078065016?text=Hi,%20I'm%20interested%20in%20your%20CV%20services"
+                    Consult First
+                  </button>
+                  <a
+                    href="https://wa.me/234XXXXXXXXXX?text=Hi,%20I'm%20interested%20in%20your%20CV%20services"
                     className="p-2 rounded-lg bg-green-600 text-white hover:bg-green-700"
                   >
                     <MessageCircle className="w-5 h-5" />
-                  </a> */}
+                  </a>
                 </div>
               </div>
             </div>
@@ -324,7 +322,7 @@ export default function CVBuildingService() {
         </div>
 
         {/* After consultation CTA */}
-        {/* <div className="mt-12 bg-blue-50 p-6 rounded-xl">
+        <div className="mt-12 bg-blue-50 p-6 rounded-xl">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-4 md:mb-0">
               <h3 className="text-xl font-bold mb-1">
@@ -342,7 +340,7 @@ export default function CVBuildingService() {
               Proceed to Payment
             </button>
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/* Consultation Modal */}
@@ -386,49 +384,69 @@ export default function CVBuildingService() {
       )}
 
       {/* Process Section */}
-      <div className="mb-40">
+      <div className="mb-20">
         <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
 
-        <div className="relative flex w-full justify-baseline gap-5">
+        <div className="relative">
           {/* Process flow connector */}
-          {/* <div className="absolute top-24 left-0 right-0 h-2 bg-blue-100 hidden md:block"></div> */}
+          <div className="absolute top-24 left-0 right-0 h-2 bg-blue-100 hidden md:block"></div>
 
-          <div className="text-center">
-            <div className="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold mx-auto mb-4 relative z-10">
-              <MessageCircle className="w-8 h-8" />
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+            <div className="text-center">
+              <div className="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold mx-auto mb-4 relative z-10">
+                <MessageCircle className="w-8 h-8" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Free Consultation</h3>
+              <p className="text-gray-600">
+                Talk to us on WhatsApp about your career goals
+              </p>
+              <img
+                src="/img/home/software dev.jpg"
+                alt="WhatsApp consultation"
+                className="mx-auto mt-4 rounded-lg shadow"
+                // Replace with "whatsapp-consultation.jpg" - Image showing a WhatsApp chat
+              />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Free Consultation</h3>
-            <p className="text-gray-600">
-              Talk to us on WhatsApp about your career goals
-            </p>
-          </div>
 
-          <div className="text-center">
-            <div className="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold mx-auto mb-4 relative z-10">
-              <FileText className="w-8 h-8" />
+            <div className="text-center">
+              <div className="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold mx-auto mb-4 relative z-10">
+                <FileText className="w-8 h-8" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">
+                Package Recommendation
+              </h3>
+              <p className="text-gray-600">
+                We suggest the best option for your specific needs
+              </p>
+              <img
+                src="/img/home/software dev.jpg"
+                alt="Package recommendation"
+                className="mx-auto mt-4 rounded-lg shadow"
+                // Replace with "package-recommendation.jpg" - Image showing someone making a choice
+              />
             </div>
-            <h3 className="text-lg font-semibold mb-2">
-              Package Recommendation
-            </h3>
-            <p className="text-gray-600">
-              We suggest the best option for your specific needs
-            </p>
-          </div>
 
-          <div className="text-center">
-            <div className="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold mx-auto mb-4 relative z-10">
-              <CreditCard className="w-8 h-8" />
+            <div className="text-center">
+              <div className="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold mx-auto mb-4 relative z-10">
+                <CreditCard className="w-8 h-8" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Simple Payment</h3>
+              <p className="text-gray-600">
+                Secure payment through bank transfer or digital options
+              </p>
+              <img
+                src="/img/home/software dev.jpg"
+                alt="Payment process"
+                className="mx-auto mt-4 rounded-lg shadow"
+                // Replace with "payment-process.jpg" - Image showing payment on mobile phone
+              />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Simple Payment</h3>
-            <p className="text-gray-600">
-              Secure payment through bank transfer or digital options
-            </p>
           </div>
         </div>
       </div>
 
       {/* Testimonials */}
-      <div className="mb-40">
+      <div className="mb-20">
         <h2 className="text-3xl font-bold text-center mb-12">
           What Our Clients Say
         </h2>
@@ -546,10 +564,9 @@ export default function CVBuildingService() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="https://wa.me/2347078065016?text=Hi,%20I%20need%20help%20with%20a%20professional%20CV."
+            href="https://wa.me/234XXXXXXXXXX?text=Hi,%20I%20need%20help%20with%20a%20professional%20CV."
             className="bg-green-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-700 transition shadow-md flex items-center justify-center"
           >
-            
             <svg
               className="w-5 h-5 mr-2"
               fill="currentColor"
