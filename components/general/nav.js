@@ -78,6 +78,10 @@ const Nav = () => {
         </span> */}
         {/* <span className="relative hidden md:block w-0.5 h-6 bg-black"></span> */}
         <span className="">
+          <a href="/cvbuild">cvbuilder</a>
+        </span>
+        <span className="relative hidden md:block w-0.5 h-6 bg-black"></span>
+        <span className="">
           <a href="/about">About Us</a>
         </span>
         <span className="relative hidden md:block w-0.5 h-6 bg-black"></span>

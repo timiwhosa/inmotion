@@ -8,6 +8,7 @@ import {
   Linkedin,
   MessageCircle,
   CreditCard,
+  MessageCircleCode,
 } from "lucide-react";
 
 export default function CVBuildingService() {
@@ -16,19 +17,20 @@ export default function CVBuildingService() {
 
   const packages = [
     {
-      id: "simple",
-      title: "Simple CV",
-      price: "₦5,000",
+      id: "build",
+      title: "Build With Me",
+      price: "₦8,000",
       features: [
-        "Professional CV template",
-        "ATS-friendly format",
-        "48-hour delivery",
-        "1 round of revisions",
+        "1-on-1 CV building session",
+        "Live collaboration",
+        "Industry-specific guidance",
+        "Interview preparation tips",
         "DOC & PDF formats",
       ],
-      icon: <FileText className="w-10 h-10 text-blue-500 mb-4" />,
+      icon: <Star className="w-10 h-10 text-purple-500 mb-4" />,
       paymentLink: "test",
-      // image: "/img/home/software dev.jpg", // Replace with "professional-cv-template.jpg" - Image of a clean, professional CV template
+
+      // image: "/img/home/software dev.jpg", // Replace with "collaborative-session.jpg" - Image of two people working together on laptop
     },
     {
       id: "career",
@@ -48,21 +50,21 @@ export default function CVBuildingService() {
       // image: "/img/home/software dev.jpg", // Replace with "career-pack-multiple-cvs.jpg" - Image showing multiple CV designs side by side
     },
     {
-      id: "build",
-      title: "Build With Me",
-      price: "₦8,000",
+      id: "simple",
+      title: "Simple CV",
+      price: "₦5,000",
       features: [
-        "1-on-1 CV building session",
-        "Live collaboration",
-        "Industry-specific guidance",
-        "Interview preparation tips",
+        "Professional CV template",
+        "ATS-friendly format",
+        "48-hour delivery",
+        "1 round of revisions",
         "DOC & PDF formats",
       ],
-      icon: <Star className="w-10 h-10 text-purple-500 mb-4" />,
+      icon: <FileText className="w-10 h-10 text-blue-500 mb-4" />,
       paymentLink: "test",
-
-      // image: "/img/home/software dev.jpg", // Replace with "collaborative-session.jpg" - Image of two people working together on laptop
+      // image: "/img/home/software dev.jpg", // Replace with "professional-cv-template.jpg" - Image of a clean, professional CV template
     },
+
     {
       id: "linkedin",
       title: "LinkedIn 0-Hero",
@@ -304,45 +306,47 @@ export default function CVBuildingService() {
                   ))}
                 </ul>
 
-                <div className="flex space-x-2">
+                {/* <div className="flex space-x-2">
                   <a href={pkg.paymentLink}
                     onClick={() => handleSelectPackage(pkg.id)}
                     className="flex-1 py-2 text-center rounded-lg font-medium bg-blue-600 text-white hover:bg-blue-700"
                   >
                     Get this Package
-                  </a>
-                  {/* <a
+                  </a> */}
+                {/* <a
                     href="https://wa.me/2347078065016?text=Hi,%20I'm%20interested%20in%20your%20CV%20services"
                     className="p-2 rounded-lg bg-green-600 text-white hover:bg-green-700"
                   >
                     <MessageCircle className="w-5 h-5" />
                   </a> */}
-                </div>
+                {/* </div> */}
               </div>
             </div>
           ))}
         </div>
 
         {/* After consultation CTA */}
-        {/* <div className="mt-12 bg-blue-50 p-6 rounded-xl">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="mt-12 bg-blue-50 p-6 rounded-xl">
+          <div className="flex flex-col md:flex-row items-center gap-10 ">
             <div className="mb-4 md:mb-0">
               <h3 className="text-xl font-bold mb-1">
-                Ready after your consultation?
+                Ready To build your CV?
               </h3>
               <p className="text-gray-600">
-                Once you've talked with our team and know what you need
+                Talk with our team and know what you need
               </p>
             </div>
-            <button
-              onClick={initiatePayment}
+            <a href="https://wa.me/2347078065016?text=Hi,%20I%20need%20help%20with%20a%20professional%20CV."
+              // onClick={initiatePayment}
               className="flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition shadow"
             >
-              <CreditCard className="w-5 h-5 mr-2" />
-              Proceed to Payment
-            </button>
+              <MessageCircle className="w-5 h-5 mr-2" />
+              {/* <CreditCard className="w-5 h-5 mr-2" /> */}
+              {/* Proceed to Payment */}
+              Talk with Us Now
+            </a>
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/* Consultation Modal */}
@@ -549,7 +553,6 @@ export default function CVBuildingService() {
             href="https://wa.me/2347078065016?text=Hi,%20I%20need%20help%20with%20a%20professional%20CV."
             className="bg-green-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-700 transition shadow-md flex items-center justify-center"
           >
-            
             <svg
               className="w-5 h-5 mr-2"
               fill="currentColor"
