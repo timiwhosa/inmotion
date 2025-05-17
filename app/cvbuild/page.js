@@ -174,8 +174,8 @@ export default function CVBuildingService() {
                   Personalized Recommendations
                 </h3>
                 <p className="text-gray-600">
-                  We'll help you choose the right package based on your specific
-                  career goals and situation
+                  We{"'"}ll help you choose the right package based on your
+                  specific career goals and situation
                 </p>
               </div>
             </div>
@@ -336,7 +336,8 @@ export default function CVBuildingService() {
                 Talk with our team and know what you need
               </p>
             </div>
-            <a href="https://wa.me/2347078065016?text=Hi,%20I%20need%20help%20with%20a%20professional%20CV."
+            <a
+              href="https://wa.me/2347078065016?text=Hi,%20I%20need%20help%20with%20a%20professional%20CV."
               // onClick={initiatePayment}
               className="flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition shadow"
             >
@@ -353,7 +354,7 @@ export default function CVBuildingService() {
       {showConsultModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-xl p-6 max-w-md w-full">
-            <h3 className="text-2xl font-bold mb-4">Let's Talk First!</h3>
+            <h3 className="text-2xl font-bold mb-4">Let{"'"}s Talk First!</h3>
             <p className="text-gray-600 mb-4">
               We recommend a quick consultation before payment to ensure we
               understand your needs and can deliver the best results.
@@ -449,8 +450,8 @@ export default function CVBuildingService() {
               </div>
             </div>
             <p className="text-gray-700">
-              "I used the CV they made for me and got two interview callbacks in
-              just one week. The investment was totally worth it!"
+              {`"`}I used the CV they made for me and got two interview callbacks in
+              just one week. The investment was totally worth it!{`"`}
             </p>
           </div>
 
@@ -465,8 +466,8 @@ export default function CVBuildingService() {
               </div>
             </div>
             <p className="text-gray-700">
-              "They helped me position my sales experience for a marketing role.
-              Within a month, I secured a job at a top firm in Lagos!"
+              {`"`}They helped me position my sales experience for a marketing role.
+              Within a month, I secured a job at a top firm in Lagos!{`"`}
             </p>
           </div>
 
@@ -481,9 +482,9 @@ export default function CVBuildingService() {
               </div>
             </div>
             <p className="text-gray-700">
-              "As a fresh graduate with limited experience, I was worried. Their
+              {`"`}As a fresh graduate with limited experience, I was worried. Their
               team helped me highlight my skills and potential. Highly
-              recommended!"
+              recommended!{`"`}
             </p>
           </div>
         </div>
@@ -511,7 +512,7 @@ export default function CVBuildingService() {
               How long does the process take?
             </h3>
             <p className="text-gray-600">
-              You'll receive your professionally written CV within 24-48 hours
+              You{"'"}ll receive your professionally written CV within 24-48 hours
               after our consultation and payment.
             </p>
           </div>
@@ -522,7 +523,7 @@ export default function CVBuildingService() {
             </h3>
             <p className="text-gray-600">
               All packages include at least one round of revisions to ensure
-              you're completely satisfied.
+              you{"'"}re completely satisfied.
             </p>
           </div>
 
