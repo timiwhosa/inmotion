@@ -1,24 +1,26 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Nav = () => {
   return (
-    <nav className="flex p-5 justify-between items-center w-full z-10 md:py-10 md:px-20">
-      <div className="flex flex-row gap-2 items-center">
-        <Image
-          alt="inmotion logo mark"
-          src="/img/icon.svg"
-          width={50}
-          height={50}
-          className="object-contain w-auto h-[35px]"
-        />
-        <Image
-          alt="inmotion word mark"
-          src="/img/inmotion.svg"
-          width={50}
-          height={50}
-          className="object-contain w-auto h-[26px]"
-        />
-        {/* <svg
+    <nav className="flex p-5 justify-between items-start sm:items-center w-full z-10 md:py-10 md:px-20">
+      <Link href="/" prefetch>
+        <div className="flex flex-row gap-2 items-center">
+          <Image
+            alt="inmotion logo mark"
+            src="/img/icon.svg"
+            width={50}
+            height={50}
+            className="object-contain w-auto h-[35px]"
+          />
+          <Image
+            alt="inmotion word mark"
+            src="/img/inmotion.svg"
+            width={50}
+            height={50}
+            className="object-contain w-auto h-[26px]"
+          />
+          {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           width="179"
           height="186"
@@ -35,7 +37,7 @@ const Nav = () => {
           ></path>
         </svg> */}
 
-        {/* <svg
+          {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           width="640"
           height="126"
@@ -71,22 +73,30 @@ const Nav = () => {
             fill="black"
           ></path>
         </svg> */}
-      </div>
-      <div className=" flex-col hidden sm:flex md:flex-row items-center rounded-[20px] border-black border w-max h-max py-2 px-2 md:py-5 md:px-5 gap-2 md:gap-10 text-base font-normal underline ">
+        </div>
+      </Link>
+      <div className="flex flex-col  sm:flex md:flex-row items-center rounded-[20px] border-black border w-max h-max py-2 px-2 md:py-5 md:px-5 gap-2 md:gap-10 text-base font-normal underline ">
         {/* <span className="">
           <a href="#locations">Locations</a>
         </span> */}
         {/* <span className="relative hidden md:block w-0.5 h-6 bg-black"></span> */}
         <span className="">
-          <a href="/cvbuild">cvbuilder</a>
+          <Link href="/cvbuild" prefetch>
+            cvbuilder
+          </Link>
         </span>
         <span className="relative hidden md:block w-0.5 h-6 bg-black"></span>
         <span className="">
-          <a href="/about">About Us</a>
+          <Link href="/about" prefetch>
+            About Us
+          </Link>
         </span>
         <span className="relative hidden md:block w-0.5 h-6 bg-black"></span>
         <span className="">
-          <a href="https://wa.me/2347078065016"> Contact Us</a>
+          <a href="https://wa.me/2347078065016" target="_blanl">
+            {" "}
+            Contact Us
+          </a>
         </span>
       </div>
     </nav>

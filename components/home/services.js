@@ -92,25 +92,25 @@ const Services = () => {
             </p>
             <div className="grid grid-cols-3 gap-1 md:gap-5 w-full">
               <Image
-                src="/img/home/software dev.jpg"
+                src="/img/home/image_segmentation.png"
                 width={2234}
                 height={2234}
                 alt="software dev"
-                className="rounded-xl brightness-90 w-full h-auto"
+                className="rounded-xl brightness-90 w-full h-full object-cover"
               />
               <Image
-                src="/img/home/software dev.jpg"
+                src="/img/home/image_segmentation2.png"
                 width={2234}
                 height={2234}
                 alt="software dev"
-                className="rounded-xl brightness-90 w-full h-auto"
+                className="rounded-xl brightness-90 w-full h-full object-cover"
               />
               <Image
-                src="/img/home/software dev.jpg"
+                src="/img/home/image_segmentation3.png"
                 width={2234}
                 height={2234}
                 alt="software dev"
-                className="rounded-xl brightness-90 w-full  h-auto"
+                className="rounded-xl brightness-90 w-full  h-full object-cover"
               />
             </div>
           </div>
