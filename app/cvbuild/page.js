@@ -20,7 +20,7 @@ export default function CVBuildingService() {
       id: "build",
       title: "Cv Champion",
       price: "₦12,000",
-      formerPrice: "₦10,000",
+      formerPrice: "₦15,000",
       features: [
         "1 CV (ATS-Friendly)",
         "1 Cover Letter (Job Specific)",
