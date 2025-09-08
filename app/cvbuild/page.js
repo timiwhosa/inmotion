@@ -36,7 +36,7 @@ export default function CVBuildingService() {
     },
     {
       id: "career",
-      title: "CFast Track Career Pack",
+      title: "Fast Track Career Pack",
       price: "₦19,000",
       formerPrice: "₦23,000",
       popular: true,
